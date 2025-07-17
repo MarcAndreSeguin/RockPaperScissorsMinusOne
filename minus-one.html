@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Minus One</title>
+</head>
+<body>
+  <section id="instructions">
+    <h2>Rock, Paper, Scissors ... <span class="gloomy-title">Minus One!</span></h2>
+    <p><strong>Instructions:</strong> Pick a move for both hands. Remove one. Winner is chosen from the remaining hands using classic RPS rules.</p>
+  </section>
+
+  <button id="play-button">LET'S PLAY!</button>
+  <button id="reset">Reset</button>
+
+  <section id="gameplay">
+    <div id="player">
+      <h3>Your Hands:</h3>
+
+      <div class="hand-group">
+        <p>Left Hand:</p>
+        <div class="button-row">
+          <button class="choice" data-hand="left" data-choice="rock" disabled>Rock</button>
+          <button class="choice" data-hand="left" data-choice="paper" disabled>Paper</button>
+          <button class="choice" data-hand="left" data-choice="scissors" disabled>Scissors</button>
+          <button class="remove-hand" data-remove="left" hidden>❌</button>
+        </div>
+      </div>
+
+      <div class="hand-group">
+        <p>Right Hand:</p>
+        <div class="button-row">
+          <button class="choice" data-hand="right" data-choice="rock" disabled>Rock</button>
+          <button class="choice" data-hand="right" data-choice="paper" disabled>Paper</button>
+          <button class="choice" data-hand="right" data-choice="scissors" disabled>Scissors</button>
+          <button class="remove-hand" data-remove="right" hidden>❌</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="computer">
+      <h3>Computer’s Hands:</h3>
+      <p>Left Hand:</p>
+      <button class="cpu-left">---</button>
+      <p>Right Hand:</p>
+      <button class="cpu-right">---</button>
+    </div>
+  </section>
+
+  <section id="captions">
+    <p id="captions-paragraph"></p>
+  </section>
+
+  <hr>
+  <p><em>Inspired by Squid Game S2</em></p>
+  <p>&copy; 2025 JazzStack.io</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

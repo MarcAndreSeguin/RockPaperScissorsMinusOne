@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.gloomy-title {
+  font-family: 'UnifrakturCook', cursive;
+  color: #ff4444;
+  text-shadow: 1px 1px 4px black;
+}
+
+#instructions {
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover:enabled {
+  background-color: #333;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+button.locked-choice {
+  background-color: green;
+  color: white;
+  border: 2px solid #0cba0c;
+  cursor: default;
+}
+
+button.disabled-other {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button.final-selection {
+  background-color: #009688;
+  border: 2px solid #26d7c6;
+  font-weight: bold;
+}
+
+#gameplay {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#player, #computer {
+  flex: 1;
+  max-width: 300px;
+}
+
+#captions-paragraph {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  min-height: 2rem;
+}
+
+hr {
+  margin: 40px 0 10px;
+  border-color: #444;
+}
+
+.hand-group {
+  margin-bottom: 1.5em;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-hand {
+  background-color: #8b0000;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 6px 10px;
+}
+
+.remove-hand:hover {
+  background-color: #a40000;
+}
+
+.remove-hand:disabled {
+  background-color: #333;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.removed-hand {
+  border: 2px solid #c00 !important;
+  color: #c00 !important;
+  opacity: 0.5;
+}
